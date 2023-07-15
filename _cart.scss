@@ -1,0 +1,251 @@
+  
+.shopping-arrivals {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: #F8F3F4;
+  @extend %flex;
+  justify-content: space-between;
+
+  &__title  {
+    color: $selectColor;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+.cart {
+  padding-top: 96px;
+  padding-bottom: 128px;
+  display: flex;
+  justify-content: space-between;
+  
+  &_content {
+    width: $productGap * 5;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &_card {  
+    display:flex;
+    gap: $gridGap;
+    box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+    transition: transform 1s;
+  }
+
+  &_card:hover {
+    transform: scale(1.1);
+  }  
+
+  &_img {
+    width: $productGap * 2;
+  }
+
+  &_info {
+    padding-top: 22px;
+    padding-right: 22px;
+    width: $productGap * 3;
+  }
+
+  &_heading {
+    margin-bottom: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+
+  &_title {
+    width: $productGap * 2 - $gridGap * 2;
+    color: #222;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
+  }
+
+  &_button {
+    padding-top: 8px;
+    background-color: #FFFFFF;
+    border: none;
+  }
+
+  &_item {
+    margin-bottom: 6px;
+    color: #575757;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &_dollar {
+    color: $selectColor;
+  }
+
+  &_store {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  &_count {
+    width: 44px;
+    height: 24px;
+    padding-left: 8px;
+    padding-right: 2px;
+    color: #656565;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    border: 1px solid #D3D3D3;
+    }
+
+  &_shopping {
+    padding-top: 32px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &_shopping_button {
+    padding: 16px 40px;
+    color: #000;
+    background-color: #FFFFFF;
+    border: 1px solid #D3D3D3;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  &_shopping_button:hover {
+    background: $selectColor;
+    color: white;  
+  }  
+
+  &_result {
+   width: $thidWidth; 
+   display: flex;
+   flex-direction: column;
+  }
+
+  &_address {
+    padding-top: 18px;
+    padding-bottom: 20px;
+    margin-bottom: 36px;
+  }
+
+  &_address_title {
+    margin-bottom: 20px;
+    color: $topBottomColor;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;    
+  }
+
+  &_address_form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &_address_item {
+    height: 45px;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: $topBottomColor;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;   
+    border: 1px solid #D3D3D3; 
+  }
+  &_address_submit {
+    height: 35px;
+    width: 100px;
+    color: #4A4A4A;
+    background-color: #FFFFFF;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;    
+    border: 1px solid #D3D3D3;
+  }
+
+  &_address_submit:hover {
+    background: $selectColor;
+    color: white;  
+  }
+
+  &_total {
+    height: 214px;
+    width: 100%;
+    background-color:  #F5F3F3;
+    padding: 30px 34px 42px 44px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &_subtotal {
+    display: flex;
+    justify-content: end;
+    gap: $gridGap;
+  }
+
+  &_subtotal_item {
+    color: #4A4A4A;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &_grand_total {
+    display: flex;
+    justify-content: end;
+    gap: $gridGap;
+  }  
+
+  &_grand_total_item { 
+    color: #4A4A4A;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  &_grand_price {
+    color: $selectColor;
+  }
+
+  &_proceed {
+    margin-top: 10px;
+    border-top: 1px solid #E2E2E2;
+    display: flex;
+    justify-content: center;
+  }
+
+  &_checkout_button {
+    margin-top: 17px;
+    padding: 16px 40px;
+    background: #FFFFFF;
+    color: $selectColor;
+    border: 1px solid $selectColor;  
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;    
+  }
+
+  &_checkout_button:hover {
+    background: $selectColor;
+    color: white;
+  }  
+}
+  

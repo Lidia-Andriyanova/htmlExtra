@@ -3,6 +3,7 @@
 @import 'index';
 @import 'catalog';
 @import 'product';
+@import 'cart';
 
 /**
    * ----------------------------------------
@@ -122,6 +123,7 @@ a {
   &:checked ~ .nav {
     right: -$burgerWidth;
   }
+ 
 }
 
 .mobile-menu {
@@ -230,6 +232,129 @@ a {
     color: #636363; 
     font-weight: 300;
     content: "/\00a0";    
+  }
+}
+
+.product-box {
+  padding-bottom: 48px;
+
+  &_heading {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: $topBottomColor;
+  }
+  
+  &_text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    margin-top: 6px;
+    color: #9F9F9F;
+  }
+  
+  &_content {
+    margin-top: 48px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 360px);
+    justify-content: center;
+    gap: $gridGap;
+  }    
+}
+
+.product {
+  position: relative;
+
+  &_add {
+    display: flex;
+  }
+  
+  &:hover .product_img {
+    -webkit-filter: brightness(0.5);
+    filter: brightness(0.5);
+  }
+  
+  &:hover .product_add {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  &_img {
+    width: 100%;
+  }
+  
+  &_add {
+    position: absolute;
+    top: 188px;
+    left: 111px;
+    border: 1px solid #fff;
+    width: 139px;
+    height: 44px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: none;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 11px;
+    color: #FFFFFF;
+  }
+  
+  &_add:hover {
+    -webkit-box-shadow: 0 0 5px #fff;
+    box-shadow: 0 0 5px #fff;
+  }
+  
+  &__add:hover svg path {
+    fill: $selectColor;
+  }
+  
+  &_content {
+    background: #F8F8F8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 24px 16px;
+    gap: 16px;
+  }
+  
+  &_heading {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: $colorText;
+  }
+
+  &_heading:hover {
+    color: $selectColor;
+  }
+  
+  &_text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+  }
+  
+  &_price {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: $selectColor;
   }
 }
 
