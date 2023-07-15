@@ -1,0 +1,313 @@
+/**
+ * ----------------------------------------
+ * animation heartbeat
+ * ----------------------------------------
+ */
+ @-webkit-keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+  @keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+     
+  .promo {
+    display: flex;
+    background: #F1E4E6;
+    padding-left: calc(50% - 800px);
+    padding-right: calc(50% - 800px);
+
+    &_content {
+      padding-left: 64px;
+      animation: heartbeat 1.5s ease-in-out infinite both;
+    }
+    
+    &_img {
+      width: 50%;
+    }
+    
+    &_info {
+      border-left: 12px solid $selectColor;
+      padding-left: 16px;
+      margin-top: 48%;
+    }
+    
+    &_title {
+      font-style: normal;
+      font-weight: 900;
+      font-size: 48px;
+      line-height: 58px;
+      color: $topBottomColor;
+    }
+    
+    &_heading {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 38px;
+      color: $topBottomColor;
+    }
+    
+    &_select {
+      color: $selectColor;
+    }    
+  }
+  
+  .sale {
+    display: grid;
+    gap: $gridGap;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 64px;
+    padding-bottom: 96px;
+
+    &_item {
+      position: relative;
+      transition: transform 1s;
+    }
+    
+    &_item:hover {
+      transform: scale(1.1);
+    }
+    
+    &_content {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    &_item_big {
+      min-height: 180px;
+      grid-column: 1 / -1;
+    }
+    
+    &_text {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      color: #FFFFFF;
+    }
+    
+    &_heading {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      text-align: center;
+      color: $selectColor;
+    }    
+  }
+    
+  .product-box {
+    padding-bottom: 48px;
+
+    &_heading {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 36px;
+      text-align: center;
+      color: $topBottomColor;
+    }
+    
+    &_text {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      text-align: center;
+      margin-top: 6px;
+      color: #9F9F9F;
+    }
+    
+    &_content {
+      margin-top: 48px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, 360px);
+      justify-content: center;
+      gap: $gridGap;
+    }    
+  }
+  
+  .product {
+    position: relative;
+
+    &_add {
+      display: flex;
+    }
+    
+    &:hover .product_img {
+      -webkit-filter: brightness(0.5);
+      filter: brightness(0.5);
+    }
+    
+    &:hover .product_add {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    }
+    
+    &_img {
+      width: 100%;
+    }
+    
+    &_add {
+      position: absolute;
+      top: 188px;
+      left: 111px;
+      border: 1px solid #fff;
+      width: 139px;
+      height: 44px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      display: none;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      gap: 11px;
+      color: #FFFFFF;
+    }
+    
+    &_add:hover {
+      -webkit-box-shadow: 0 0 5px #fff;
+      box-shadow: 0 0 5px #fff;
+    }
+    
+    &__add:hover svg path {
+      fill: $selectColor;
+    }
+    
+    &_content {
+      background: #F8F8F8;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 24px 16px;
+      gap: 16px;
+    }
+    
+    &_heading {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 16px;
+      color: $colorText;
+    }
+    
+    &_text {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 17px;
+      color: #5D5D5D;
+    }
+    
+    &_price {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: $selectColor;
+    }
+  }
+   
+  .browse {
+    display: flex;
+    justify-content: center;
+
+    &__button {
+      padding: 15px 39px;
+      margin-bottom: 60px;
+      background: white;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #F16D7F;
+      border: 1px solid  #F16D7F;
+    }
+    
+    &__button:hover {
+      background: #F16D7F;
+      color: white;
+      }    
+  }
+  
+
+  
+
+  
