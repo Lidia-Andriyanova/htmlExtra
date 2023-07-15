@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'mixins';
 @import 'index';
+@import 'catalog';
 
 /**
    * ----------------------------------------
@@ -82,14 +83,6 @@ body {
 
 a {
   text-decoration: none;
-}
-
-summary {
-  display: block;
-}
-
-summary::webkit-details-marker {
-  display: none;
 }
 
 .center {
@@ -201,6 +194,42 @@ summary::webkit-details-marker {
   top: 80px;
   right: 0;
   transition: right 1s;
+}
+
+.arrivals {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: #F8F3F4;
+  @extend %flex;
+  justify-content: space-between;
+
+  &_title  {
+    color: $selectColor;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .breadcrumbs_link {
+    color: #636363;  
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  .breadcrumbs_select {
+    color: $selectColor;    
+    font-weight: 700;
+  }
+
+  .breadcrumbs_link:not(:last-child):after {
+    padding: 8px;
+    color: #636363; 
+    font-weight: 300;
+    content: "/\00a0";    
+  }
 }
 
 .service {
@@ -363,6 +392,5 @@ background-size: cover;
     fill: white;
   }    
 }
-
 
 
