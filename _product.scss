@@ -1,0 +1,112 @@
+
+
+.present {
+  background-color: #F7F7F7;
+  @include centerflex();
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+.collection {
+  margin-bottom: 500px;
+  position: relative;
+
+  &_info {
+      padding-top: 65px;
+      padding-bottom: 65px;
+      width: $siteWidth;
+      background-color: #FFFFFF;
+      border: 1px solid #EAEAEA;
+      position: absolute;
+      top: -60px;
+      @include centerflex();
+      flex-direction: column;
+  }
+
+  &_title {
+    margin-bottom: 12px;
+    color: $selectColor;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;    
+  }
+
+  &_title_line {
+    margin-bottom: 12px;
+    border: 2px solid #EF5B70;
+    width: 64px;
+  }
+
+  &_heading {
+    margin-bottom: 48px;
+    color: #4D4D4D;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;    
+  }
+
+  &_text {
+    width: 570px;
+    margin-bottom: 32px;
+    text-align: center;
+    color: #5E5E5E;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;    
+  }
+
+  &_price {
+    margin-bottom: 65px;
+    color: #EF5B70;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;    
+  }
+
+  &_price_line {
+    margin-bottom: 64px;
+    border: 1px solid #EAEAEA;
+    width: 640px;
+  }  
+
+  &_choice {
+    margin-bottom: 64px;
+    width: 380px;    
+    @extend %flex;
+    justify-content: space-between;
+  }
+
+  &_action {
+    color: #6F6E6E;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
+  }
+
+  &_add {
+    width: 212px;
+    height: 48px; 
+    background: white;
+    color: $selectColor;
+    border: 1px solid $selectColor;
+    font-size: 16px;
+    @include centerflex();
+    gap: 20px;
+  }
+
+  &_add:hover{
+    background-color: $selectColor;
+    color: white;
+  }
+  
+  &_add:hover path{
+    fill: white;
+  }     
+}
+

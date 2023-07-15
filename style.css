@@ -386,6 +386,112 @@ summary::webkit-details-marker {
   top: 22px;
 }
 
+.present {
+  background-color: #F7F7F7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+.collection {
+  margin-bottom: 500px;
+  position: relative;
+}
+.collection_info {
+  padding-top: 65px;
+  padding-bottom: 65px;
+  width: 1140px;
+  background-color: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  position: absolute;
+  top: -60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.collection_title {
+  margin-bottom: 12px;
+  color: #F16D7F;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.collection_title_line {
+  margin-bottom: 12px;
+  border: 2px solid #EF5B70;
+  width: 64px;
+}
+.collection_heading {
+  margin-bottom: 48px;
+  color: #4D4D4D;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.collection_text {
+  width: 570px;
+  margin-bottom: 32px;
+  text-align: center;
+  color: #5E5E5E;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.collection_price {
+  margin-bottom: 65px;
+  color: #EF5B70;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.collection_price_line {
+  margin-bottom: 64px;
+  border: 1px solid #EAEAEA;
+  width: 640px;
+}
+.collection_choice {
+  margin-bottom: 64px;
+  width: 380px;
+  justify-content: space-between;
+}
+.collection_action {
+  color: #6F6E6E;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.collection_add {
+  width: 212px;
+  height: 48px;
+  background: white;
+  color: #F16D7F;
+  border: 1px solid #F16D7F;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.collection_add:hover {
+  background-color: #F16D7F;
+  color: white;
+}
+.collection_add:hover path {
+  fill: white;
+}
+
 /**
    * ----------------------------------------
    * animation wobble-hor-bottom
@@ -433,7 +539,7 @@ summary::webkit-details-marker {
     transform: translateX(-6px) rotate(-1.2deg);
   }
 }
-.arrivals {
+.arrivals, .collection_choice {
   display: flex;
   flex-wrap: wrap;
 }
