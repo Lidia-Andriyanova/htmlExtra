@@ -1,0 +1,135 @@
+  
+.registration-arrivals {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: #F8F3F4;
+  @extend %flex;
+  justify-content: space-between;
+
+  &__title  {
+    color: $selectColor;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+.registration {
+  padding-top: 64px;
+  padding-bottom: 96px;
+  display: flex;
+  justify-content: space-between;
+  gap: 128px;
+
+  &-form {
+    display: flex;
+    flex-direction: column;
+
+    &__title  {
+      color: $topBottomColor;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;    
+    }
+  
+    &__personal {
+      display: flex;
+      flex-direction: column;
+      gap: 21px;
+      padding-bottom: 15px;
+    }
+
+    &__login {
+      display: flex;
+      flex-direction: column;
+      gap: 21px;
+      padding-bottom: 15px;
+    }    
+
+    &__sex {
+      padding-top: 6px;
+      padding-bottom: 20px;
+    }
+  
+    &__item {
+      padding: 13px 16px 16px 16px;
+      color: #B1B1B1;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;    
+    }
+  
+    &__sex  {
+     display: flex;
+     gap: 20px;
+    }    
+
+    &__label {
+      color: $colorText;
+      font-size: 11px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;      
+    }
+
+    &__password-note {
+      color: #B1B1B1;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+    }  
+
+    &__submit {
+        margin-top: 17px;
+        padding: 16px 40px;
+        background: #FFFFFF;
+        color: $selectColor;
+        border: 1px solid $selectColor;  
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;   
+        @include centerflex();
+        gap: 20px;
+      }
+
+      &__submit path{
+        fill: $selectColor;
+      }        
+    
+      &__submit:hover {
+        background: $selectColor;
+        color: white;
+      }  
+
+      &__submit:hover path{
+        fill: white;
+      }           
+  }
+
+  &-loyality {
+
+   &__title, &__heading, &__item {
+    color: #575757;;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;    
+    padding-bottom: 22px;
+   } 
+
+   &__list {
+    list-style-type: none;
+   }
+
+   &__style {
+    padding-right: 8px;
+   }
+
+  }
+}
+

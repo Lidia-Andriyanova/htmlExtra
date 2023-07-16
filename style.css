@@ -613,6 +613,121 @@ summary::webkit-details-marker {
   color: white;
 }
 
+.registration-arrivals {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: #F8F3F4;
+  justify-content: space-between;
+}
+.registration-arrivals__title {
+  color: #F16D7F;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.registration {
+  padding-top: 64px;
+  padding-bottom: 96px;
+  display: flex;
+  justify-content: space-between;
+  gap: 128px;
+}
+.registration-form {
+  display: flex;
+  flex-direction: column;
+}
+.registration-form__title {
+  color: #222222;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.registration-form__personal {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  padding-bottom: 15px;
+}
+.registration-form__login {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  padding-bottom: 15px;
+}
+.registration-form__sex {
+  padding-top: 6px;
+  padding-bottom: 20px;
+}
+.registration-form__item {
+  padding: 13px 16px 16px 16px;
+  color: #B1B1B1;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.registration-form__sex {
+  display: flex;
+  gap: 20px;
+}
+.registration-form__label {
+  color: #000;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.registration-form__password-note {
+  color: #B1B1B1;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.registration-form__submit {
+  margin-top: 17px;
+  padding: 16px 40px;
+  background: #FFFFFF;
+  color: #F16D7F;
+  border: 1px solid #F16D7F;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.registration-form__submit path {
+  fill: #F16D7F;
+}
+.registration-form__submit:hover {
+  background: #F16D7F;
+  color: white;
+}
+.registration-form__submit:hover path {
+  fill: white;
+}
+.registration-loyality__title, .registration-loyality__heading, .registration-loyality__item {
+  color: #575757;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding-bottom: 22px;
+}
+.registration-loyality__list {
+  list-style-type: none;
+}
+.registration-loyality__style {
+  padding-right: 8px;
+}
+
 /**
    * ----------------------------------------
    * animation wobble-hor-bottom
@@ -660,7 +775,7 @@ summary::webkit-details-marker {
     transform: translateX(-6px) rotate(-1.2deg);
   }
 }
-.arrivals, .collection_choice, .shopping-arrivals {
+.arrivals, .collection_choice, .shopping-arrivals, .registration-arrivals {
   display: flex;
   flex-wrap: wrap;
 }
