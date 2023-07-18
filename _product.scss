@@ -3,13 +3,15 @@
 .present {
   background-color: #F7F7F7;
   @include centerflex();
-  padding-top: 10px;
-  padding-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 80px;
 }
 
 .collection {
-  margin-bottom: 500px;
+  margin-bottom: 650px;
   position: relative;
+  display: flex;
+  justify-content: center;
 
   &_info {
       padding-top: 65px;
@@ -21,6 +23,7 @@
       top: -60px;
       @include centerflex();
       flex-direction: column;
+      box-sizing: border-box;
   }
 
   &_title {
@@ -110,3 +113,107 @@
   }     
 }
 
+
+/* ----------------------------------------
+ * max-width: 1300px
+ * ---------------------------------------- */
+  
+ @media (max-width: 1300px) {
+  .collection {
+      position: static;
+      margin-bottom: 100px;      
+  
+      &_info {
+          width: 800px;
+          position: static;
+      }
+
+      &_price_line {
+        width: 760px;
+      }        
+    }  
+ }
+
+/* ----------------------------------------
+ * max-width: 1024px
+ * ---------------------------------------- */
+
+ @media (max-width: 1024px) {
+
+.collection {
+
+    &_info {
+        width: 600px;
+    }
+
+    &_price_line {
+      width: 560px;
+    }         
+  }
+}
+
+/* ----------------------------------------
+ * max-width: 767px
+ * ---------------------------------------- */
+
+ @media (max-width: 767px) {
+
+  .collection {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+
+    &_info {
+      width: 340px;
+    }
+
+    &_price_line {
+      width: 200px;
+    }       
+
+    &_text {
+        width: 280px;
+        font-size: 10px;      
+    }
+
+    &_choice {
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      width: 280px;
+    }
+  }
+}
+
+  /* ----------------------------------------
+ * max-width: 374px
+ * ---------------------------------------- */
+
+  @media (max-width: 374px) {
+
+    .collection {
+   
+        &_info {
+            width: 300px;
+        }
+
+        &_heading {
+          font-size: 12px;
+        }
+
+        &_text {
+          width: 180px;      
+        }
+
+        &_price_line {
+          width: 170px;
+        }          
+
+        &_add {
+          width: 160px;   
+     
+    }
+  }
+}

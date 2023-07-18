@@ -113,6 +113,8 @@
 
   &-loyality {
 
+    width: 650px;
+
    &__title, &__heading, &__item {
     color: #575757;;
     font-size: 24px;
@@ -133,3 +135,49 @@
   }
 }
 
+
+/* ----------------------------------------
+ * max-width: 1024px
+ * ---------------------------------------- */
+
+@media (max-width: 1024px) {
+
+  .registration {
+      padding-top: 40px;
+      gap: 22px;
+ 
+      &-loyality {
+      width: 360px;
+
+      &__title, &__heading, &__item {
+        font-size: 16px;
+      }     
+    }
+  }
+}
+
+/* ----------------------------------------
+ * max-width: 767px
+ * ---------------------------------------- */
+ 
+ @media (max-width: 767px) {
+  
+  .registration {
+    flex-direction: column;
+    gap: 40px;
+  }
+ }
+
+ /* ----------------------------------------
+ * max-width: 374px
+ * ---------------------------------------- */
+ 
+ @media (max-width: 374px) {
+
+  .registration {
+    
+    &-loyality {
+      width: 300px;
+    }
+  }
+ }
