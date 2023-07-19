@@ -108,7 +108,6 @@ summary {
       position: relative;
   }
   
-
   &_check {
     display: flex;
     gap: 9px;
@@ -150,7 +149,16 @@ summary {
  * ---------------------------------------- */
  
  @media (max-width: 374px) {
-  .filter_heading {
-    display: none;
+  
+  .filter {
+    width: 280px;
+
+    &_heading {
+      display: none;
+    }
+ }
+
+ .sort_heading {
+  font-size: 12px;
   }
  }
